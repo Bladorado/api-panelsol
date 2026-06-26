@@ -2,9 +2,13 @@
 
 import { useState } from "react"
 
-export default function BloqueSolar({ nombreBloque, eficiencia }) {
+export default function BloqueSolar({ nombreBloque, eficiencia, clima, temperatura }) {
 
     const [energia, setEnergia] = useState(0)
+
+    const calcularMultiplicador = (clima, temperatura) =>{
+
+    }
 
     return (
         <div className="bg-gray-800 text-white p-4 rounded-lg border border-gray-600 shadow-md">

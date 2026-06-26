@@ -39,7 +39,7 @@ export default function Home() {
         <p>☁ Estado del cielo: {clima}</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <BloqueSolar nombreBloque="Sector Norte" eficiencia="95%" />
+        <BloqueSolar nombreBloque="Sector Norte" eficiencia="95%" clima={clima} temperatura={temperatura} />
         <BloqueSolar nombreBloque="Sector Sur" eficiencia="90%" />
         <BloqueSolar nombreBloque="Sector Este" eficiencia="92%" />
       </div>
